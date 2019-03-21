@@ -1,0 +1,26 @@
+[21 Mar 2019 20:22:50] DEBUG Executing SQL script
+[21 Mar 2019 20:22:50] INFO ================================================================================
+[21 Mar 2019 20:22:50] INFO onError= 'stop'
+[21 Mar 2019 20:22:50] INFO autoCommit= 'false'
+[21 Mar 2019 20:22:50] INFO username= 'root'
+[21 Mar 2019 20:22:50] INFO outputPath= 'C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\betting_house\.Temp~\RollbackSQL.xml'
+[21 Mar 2019 20:22:50] INFO outputLogPath= 'C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\betting_house\.Temp~\RollbackSQL.xml.log'
+[21 Mar 2019 20:22:50] INFO encoding= ''
+[21 Mar 2019 20:22:50] INFO driverClass= 'com.mysql.jdbc.Driver'
+[21 Mar 2019 20:22:50] INFO sqlScript= 'C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\betting_house\.Temp~\RollbackSQL.sql'
+[21 Mar 2019 20:22:50] INFO eventSocketPort= '50125'
+[21 Mar 2019 20:22:50] INFO statementSeparator= ';'
+[21 Mar 2019 20:22:50] INFO derby.system.home= 'C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[21 Mar 2019 20:22:50] INFO password= '123456'
+[21 Mar 2019 20:22:50] INFO url= 'jdbc:mysql://localhost:3306/betting_house'
+[21 Mar 2019 20:22:50] INFO ================================================================================
+[21 Mar 2019 20:22:50] INFO Connecting to the Database...
+[21 Mar 2019 20:22:51] INFO Database connection estabilished
+[21 Mar 2019 20:22:51] INFO transaction isolation: 4
+[21 Mar 2019 20:22:51] DEBUG ================================================================================
+[21 Mar 2019 20:22:51] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\betting_house\.Temp~\RollbackSQL.sql
+[21 Mar 2019 20:22:51] DEBUG Executing statement:  alter table `user`   drop column  `coins`
+[21 Mar 2019 20:22:52] DEBUG ================================================================================
+[21 Mar 2019 20:22:53] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[21 Mar 2019 20:22:53] INFO Database connection closed
+[21 Mar 2019 20:22:53] DEBUG Total time: 2187 milliseconds
