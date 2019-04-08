@@ -1,0 +1,136 @@
+[08 Abr 2019 15:24:35] Building database metadata model
+[08 Abr 2019 15:24:35] Properties: {partialRefresh=false, processColumnsUsingSelect=, includePrimaryKeys=true, eventSocketClient=com.webratio.commons.net.EventSocketClient@50c91c07, includeTables=true, username=root, outputLogPath=C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\DB.xml.log, readIndexes=null, driverClass=com.mysql.jdbc.Driver, includeSynonyms=true, metaDataProviderClass=com.webratio.commons.db.metadata.MySQLMetaDataProvider, outputPath=C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\DB.xml, schemaRegex=null, readProcedures=null, includeViews=true, derby.system.home=C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby, url=jdbc:mysql://localhost:3306/betting_house, tableRegex=null, readSQLDefinitions=true, includeForeignKeys=true, retrieveAllNames=false, tablesToRefresh=, eventSocketPort=51278}
+[08 Abr 2019 15:24:35] URL: jdbc:mysql://localhost:3306/betting_house
+[08 Abr 2019 15:24:35] Product name: MySQL
+[08 Abr 2019 15:24:35] Product version: 8.0.15
+[08 Abr 2019 15:24:35] Driver name: MySQL Connector Java
+[08 Abr 2019 15:24:35] Driver version: mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )
+[08 Abr 2019 15:24:35] Driver major version: 5
+[08 Abr 2019 15:24:35] Driver minor version: 1
+[08 Abr 2019 15:24:35] Identifier quote string: 1
+[08 Abr 2019 15:24:35] Retrieving schemas
+[08 Abr 2019 15:24:35] Retrieving [TABLE, VIEW, SYNONYM] for schema ''
+[08 Abr 2019 15:24:35]   Found 'bet' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'event' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'group' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'group_module' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'module' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'notification' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'odd' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'sport' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'team' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'user' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found 'user_group' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving columns for 'bet' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: winningbet [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: userbet [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: valuebet [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: event_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: user_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'bet' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: id
+[08 Abr 2019 15:24:35] Retrieving columns for 'event' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: information [type = LONGTEXT][SQL/XOPEN type = -1][size = 2147483647][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: isrestricted [type = BIT][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: isopen [type = BIT][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'event' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: id
+[08 Abr 2019 15:24:35] Retrieving columns for 'group' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: name [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: module_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'group' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: id
+[08 Abr 2019 15:24:35] Retrieving columns for 'group_module' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: group_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: module_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'group_module' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: group_id
+[08 Abr 2019 15:24:35]   Found primary key column: module_id
+[08 Abr 2019 15:24:35] Retrieving columns for 'module' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: moduleid [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: name [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'module' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: id
+[08 Abr 2019 15:24:35] Retrieving columns for 'notification' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: isactive [type = BIT][SQL/XOPEN type = -7][size = 1][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: id_event [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: user_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'notification' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: id
+[08 Abr 2019 15:24:35] Retrieving columns for 'odd' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: event_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: team_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: odd [type = VARCHAR][SQL/XOPEN type = 12][size = 45][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: points [type = VARCHAR][SQL/XOPEN type = 12][size = 45][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'odd' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: event_id
+[08 Abr 2019 15:24:35]   Found primary key column: team_id
+[08 Abr 2019 15:24:35] Retrieving columns for 'sport' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: name [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: event_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'sport' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: id
+[08 Abr 2019 15:24:35] Retrieving columns for 'team' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: name [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'team' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: id
+[08 Abr 2019 15:24:35] Retrieving columns for 'user' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: name [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: email [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: password [type = VARCHAR][SQL/XOPEN type = 12][size = 255][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: coins [type = DOUBLE][SQL/XOPEN type = 8][size = 22][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: group_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'user' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: id
+[08 Abr 2019 15:24:35] Retrieving columns for 'user_group' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found column: user_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35]   Found column: group_id [type = INT][SQL/XOPEN type = 4][size = 10][dec. digits = 0]
+[08 Abr 2019 15:24:35] Retrieving primary keys for 'user_group' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found primary key column: user_id
+[08 Abr 2019 15:24:35]   Found primary key column: group_id
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'bet' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found foreign key: column event_id references event(id)
+[08 Abr 2019 15:24:35]   Found foreign key: column user_id references user(id)
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'event' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'group' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found foreign key: column module_id references module(id)
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'group_module' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found foreign key: column group_id references group(id)
+[08 Abr 2019 15:24:35]   Found foreign key: column module_id references module(id)
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'module' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'notification' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found foreign key: column id_event references event(id)
+[08 Abr 2019 15:24:35]   Found foreign key: column user_id references user(id)
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'odd' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found foreign key: column event_id references event(id)
+[08 Abr 2019 15:24:35]   Found foreign key: column team_id references team(id)
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'sport' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found foreign key: column event_id references event(id)
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'team' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'user' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found foreign key: column group_id references group(id)
+[08 Abr 2019 15:24:35] Retrieving foreign keys for 'user_group' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found foreign key: column group_id references group(id)
+[08 Abr 2019 15:24:35]   Found foreign key: column user_id references user(id)
+[08 Abr 2019 15:24:35] Database metadata retrieved (172 ms)
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'bet' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'event' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'group' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'group_module' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'module' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'notification' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'odd' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'sport' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'team' [type = TABLE]
+[08 Abr 2019 15:24:35]   Found auto-increment column: id
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'user' [type = TABLE]
+[08 Abr 2019 15:24:35] Retrieving auto-increment columns for 'user_group' [type = TABLE]
+[08 Abr 2019 15:24:35] Database connection closed

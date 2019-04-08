@@ -1,0 +1,27 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area6#area11#page36" name="Coins" gr:x="0" gr:y="150">
+  <ContentUnits>
+    <EntryUnit id="sv1#area6#area11#page36#enu8" name="Add Coins Form" linkOrder="sv1#area6#area11#page36#enu8#ln30" gr:x="0" gr:y="0" entity="User">
+      <Link id="sv1#area6#area11#page36#enu8#ln30" name="Flow28" to="sv1#area6#area11#mfu8" type="normal" automaticCoupling="true" validate="true"/>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area6#area11#page36#enu8">
+          <layout:Link link="sv1#area6#area11#page36#enu8#ln30"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

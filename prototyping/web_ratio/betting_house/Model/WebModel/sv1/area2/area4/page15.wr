@@ -1,0 +1,27 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="5" gr:y="320" id="sv1#area2#area4#page15" name="Team" linkOrder="sv1#area2#area4#page15#ln8 sv1#area2#area4#page15#ln9">
+  <ContentUnits>
+    <PowerIndexUnit gr:x="0" gr:y="0" id="sv1#area2#area4#page15#pwu3" name="Team List" sortable="true" checkable="false" useCountQuery="false" entity="ent7" displayAttributes="ent7#att18"/>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#area4#page15#pwu3">
+          <layout:Attribute attribute="ent7#att18"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+  <Link id="sv1#area2#area4#page15#ln8" name="Flow8" to="sv1#area2#mfu4" automaticCoupling="true" type="normal" validate="true"/>
+  <Link id="sv1#area2#area4#page15#ln9" name="Flow9" to="sv1#area2#dlu3" automaticCoupling="true" type="normal" validate="true"/>
+</Page>

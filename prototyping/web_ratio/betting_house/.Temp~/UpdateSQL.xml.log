@@ -1,0 +1,58 @@
+[08 Abr 2019 15:12:10] DEBUG Executing SQL script
+[08 Abr 2019 15:12:10] INFO ================================================================================
+[08 Abr 2019 15:12:10] INFO onError= 'stop'
+[08 Abr 2019 15:12:10] INFO autoCommit= 'false'
+[08 Abr 2019 15:12:10] INFO username= 'root'
+[08 Abr 2019 15:12:10] INFO outputPath= 'C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\UpdateSQL.xml'
+[08 Abr 2019 15:12:10] INFO outputLogPath= 'C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\UpdateSQL.xml.log'
+[08 Abr 2019 15:12:10] INFO encoding= ''
+[08 Abr 2019 15:12:10] INFO driverClass= 'com.mysql.jdbc.Driver'
+[08 Abr 2019 15:12:10] INFO sqlScript= 'C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\UpdateSQL.sql'
+[08 Abr 2019 15:12:10] INFO eventSocketPort= '50629'
+[08 Abr 2019 15:12:10] INFO statementSeparator= ';'
+[08 Abr 2019 15:12:10] INFO derby.system.home= 'C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[08 Abr 2019 15:12:10] INFO password= '123456'
+[08 Abr 2019 15:12:10] INFO url= 'jdbc:mysql://localhost:3306/betting_house'
+[08 Abr 2019 15:12:10] INFO ================================================================================
+[08 Abr 2019 15:12:10] INFO Connecting to the Database...
+[08 Abr 2019 15:12:11] INFO Database connection estabilished
+[08 Abr 2019 15:12:11] INFO transaction isolation: 4
+[08 Abr 2019 15:12:11] DEBUG ================================================================================
+[08 Abr 2019 15:12:11] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\UpdateSQL.sql
+[08 Abr 2019 15:12:11] DEBUG Executing statement:  create table `group` ( `id`  integer  not null, `name`  varchar(255), primary key (`id`) )
+[08 Abr 2019 15:12:11] DEBUG Executing statement:    create table `module` ( `id`  integer  not null, `moduleid`  varchar(255), `name`  varchar(255), primary key (`id`) )
+[08 Abr 2019 15:12:12] DEBUG Executing statement:    create table `user` ( `id`  integer  not null, `name`  varchar(255), `email`  varchar(255), `password`  varchar(255), `coins`  double precision, primary key (`id`) )
+[08 Abr 2019 15:12:12] DEBUG Executing statement:    create table `sport` ( `id`  integer  not null, `name`  varchar(255), primary key (`id`) )
+[08 Abr 2019 15:12:12] DEBUG Executing statement:    create table `bet` ( `id`  integer  not null, `winningbet`  double precision, `userbet`  double precision, `valuebet`  double precision, primary key (`id`) )
+[08 Abr 2019 15:12:13] DEBUG Executing statement:    create table `event` ( `id`  integer  not null, `information`  longtext, `isrestricted`  bit, `isopen`  bit, primary key (`id`) )
+[08 Abr 2019 15:12:13] DEBUG Executing statement:    create table `notification` ( `id`  integer  not null, `isactive`  bit, primary key (`id`) )
+[08 Abr 2019 15:12:13] DEBUG Executing statement:    create table `odd` ( `id`  integer  not null, `odd`  double precision, `pontuation`  integer, primary key (`id`) )
+[08 Abr 2019 15:12:14] DEBUG Executing statement:    create table `team` ( `id`  integer not null auto_increment, `name`  varchar(255), primary key (`id`) )
+[08 Abr 2019 15:12:14] DEBUG Executing statement:    alter table `group`  add column  `module_id`  integer
+[08 Abr 2019 15:12:14] DEBUG Executing statement:  alter table `group`   add index fk_group_module (`module_id`), add constraint fk_group_module foreign key (`module_id`) references `module` (`id`)
+[08 Abr 2019 15:12:15] DEBUG Executing statement:    create table `group_module` ( `group_id`  integer not null, `module_id`  integer not null, primary key (`group_id`, `module_id`) )
+[08 Abr 2019 15:12:16] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_group (`group_id`), add constraint fk_group_module_group foreign key (`group_id`) references `group` (`id`)
+[08 Abr 2019 15:12:17] DEBUG Executing statement:  alter table `group_module`   add index fk_group_module_module (`module_id`), add constraint fk_group_module_module foreign key (`module_id`) references `module` (`id`)
+[08 Abr 2019 15:12:18] DEBUG Executing statement:    alter table `user`  add column  `group_id`  integer
+[08 Abr 2019 15:12:18] DEBUG Executing statement:  alter table `user`   add index fk_user_group (`group_id`), add constraint fk_user_group foreign key (`group_id`) references `group` (`id`)
+[08 Abr 2019 15:12:19] DEBUG Executing statement:    create table `user_group` ( `user_id`  integer not null, `group_id`  integer not null, primary key (`user_id`, `group_id`) )
+[08 Abr 2019 15:12:19] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_user (`user_id`), add constraint fk_user_group_user foreign key (`user_id`) references `user` (`id`)
+[08 Abr 2019 15:12:20] DEBUG Executing statement:  alter table `user_group`   add index fk_user_group_group (`group_id`), add constraint fk_user_group_group foreign key (`group_id`) references `group` (`id`)
+[08 Abr 2019 15:12:21] DEBUG Executing statement:    alter table `sport`  add column  `event_id`  integer
+[08 Abr 2019 15:12:22] DEBUG Executing statement:  alter table `sport`   add index fk_sport_event (`event_id`), add constraint fk_sport_event foreign key (`event_id`) references `event` (`id`)
+[08 Abr 2019 15:12:23] DEBUG Executing statement:    alter table `event`  add column  `odd_id`  integer
+[08 Abr 2019 15:12:23] DEBUG Executing statement:  alter table `event`   add index fk_event_odd (`odd_id`), add constraint fk_event_odd foreign key (`odd_id`) references `odd` (`id`)
+[08 Abr 2019 15:12:24] DEBUG Executing statement:    alter table `bet`  add column  `event_id`  integer
+[08 Abr 2019 15:12:24] DEBUG Executing statement:  alter table `bet`   add index fk_bet_event (`event_id`), add constraint fk_bet_event foreign key (`event_id`) references `event` (`id`)
+[08 Abr 2019 15:12:25] DEBUG Executing statement:    alter table `notification`  add column  `id_event`  integer
+[08 Abr 2019 15:12:26] DEBUG Executing statement:  alter table `notification`   add index fk_notification_event (`id_event`), add constraint fk_notification_event foreign key (`id_event`) references `event` (`id`)
+[08 Abr 2019 15:12:27] DEBUG Executing statement:    alter table `notification`  add column  `user_id`  integer
+[08 Abr 2019 15:12:27] DEBUG Executing statement:  alter table `notification`   add index fk_notification_user (`user_id`), add constraint fk_notification_user foreign key (`user_id`) references `user` (`id`)
+[08 Abr 2019 15:12:28] DEBUG Executing statement:    alter table `bet`  add column  `user_id`  integer
+[08 Abr 2019 15:12:28] DEBUG Executing statement:  alter table `bet`   add index fk_bet_user (`user_id`), add constraint fk_bet_user foreign key (`user_id`) references `user` (`id`)
+[08 Abr 2019 15:12:29] DEBUG Executing statement:    alter table `team`  add column  `odd_id`  integer
+[08 Abr 2019 15:12:29] DEBUG Executing statement:  alter table `team`   add index fk_team_odd (`odd_id`), add constraint fk_team_odd foreign key (`odd_id`) references `odd` (`id`)
+[08 Abr 2019 15:12:30] DEBUG ================================================================================
+[08 Abr 2019 15:12:30] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[08 Abr 2019 15:12:30] INFO Database connection closed
+[08 Abr 2019 15:12:30] DEBUG Total time: 20393 milliseconds

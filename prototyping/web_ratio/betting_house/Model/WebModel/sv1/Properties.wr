@@ -1,0 +1,9 @@
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="betting_house_site_view" homePage="sv1#page1" landmarks="sv1#area2 sv1#area5 sv1#area6">
+  <OperationUnits>
+    <LoginUnit gr:x="5" gr:y="235" id="sv1#lgu1" name="Login1"/>
+    <CreateUnit gr:x="0" gr:y="500" id="sv1#cru9" name="Create User" entity="User">
+      <OKLink id="sv1#cru9#oln21" name="OKFlow21" to="sv1#page41#mssu18" automaticCoupling="true"/>
+      <KOLink id="sv1#cru9#kln21" name="KOFlow21" to="sv1#page40#mssu17" automaticCoupling="true"/>
+    </CreateUnit>
+  </OperationUnits>
+</SiteView>
