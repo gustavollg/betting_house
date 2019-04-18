@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area2#area4#area13#page21" name="List" gr:x="0" gr:y="125">
+  <ContentUnits>
+    <IndexUnit id="sv1#area2#area4#area13#page21#inu9" name="Users" linkOrder="sv1#area2#area4#area13#page21#inu9#ln18" gr:x="0" gr:y="0" entity="User" displayAttributes="userName password User#att83">
+      <Link id="sv1#area2#area4#area13#page21#inu9#ln18" name="Delete" to="sv1#area2#area4#area13#dlu8" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#area4#area13#page21#inu9#ln18#par76" name="id_KeyCondition8 [id]" source="data[].userOID" target="sv1#area2#area4#area13#dlu8#su13#kcond13.userOID"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#area4#area13#page21#inu9">
+          <layout:Attribute attribute="userName"/>
+          <layout:Attribute attribute="password"/>
+          <layout:Attribute attribute="User#att83"/>
+          <layout:Link link="sv1#area2#area4#area13#page21#inu9#ln18"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

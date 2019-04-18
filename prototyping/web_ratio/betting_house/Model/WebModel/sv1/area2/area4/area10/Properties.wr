@@ -1,0 +1,26 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="840" gr:y="0" id="sv1#area2#area4#area10" name="Sports" landmark="true" defaultPage="sv1#area2#area4#area10#page18">
+  <OperationUnits>
+    <DeleteUnit id="sv1#area2#area4#area10#dlu5" name="Delete Sport" gr:x="5" gr:y="0" entity="ent4">
+      <Selector id="sv1#area2#area4#area10#dlu5#su10" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area2#area4#area10#dlu5#su10#kcond10" name="KeyCondition2" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#area2#area4#area10#dlu5#kln22" name="KOFlow15" to="sv1#area2#page3#mssu2">
+        <LinkParameter id="sv1#area2#area4#area10#dlu5#kln22#par67" name="An error has occurred._Shown Messages" target="sv1#area2#page3#mssu2.shownMessages" sourceValue="An error has occurred."/>
+      </KOLink>
+      <OKLink id="sv1#area2#area4#area10#dlu5#oln22" name="OKFlow14" to="sv1#area2#page4#mssu3">
+        <LinkParameter id="sv1#area2#area4#area10#dlu5#oln22#par68" name="User deleted successfully._Shown Messages" target="sv1#area2#page4#mssu3.shownMessages" sourceValue="Sport deleted successfully."/>
+      </OKLink>
+    </DeleteUnit>
+    <ModifyUnit gr:x="130" gr:y="0" id="sv1#area2#area4#area10#mfu7" name="Update Sport" entity="ent4">
+      <Selector id="sv1#area2#area4#area10#mfu7#su21" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area2#area4#area10#mfu7#su21#kcond16" name="KeyCondition16" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#area2#area4#area10#mfu7#kln33" name="KOFlow33" to="sv1#area2#page3#mssu2">
+        <LinkParameter id="sv1#area2#area4#area10#mfu7#kln33#par151" name="An error has occurred._Shown Messages" sourceValue="An error has occurred." target="sv1#area2#page3#mssu2.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#area2#area4#area10#mfu7#oln35" name="OKFlow35" to="sv1#area2#page4#mssu3">
+        <LinkParameter id="sv1#area2#area4#area10#mfu7#oln35#par153" name="Sport updated successfully._Shown Messages" sourceValue="Sport updated successfully." target="sv1#area2#page4#mssu3.shownMessages"/>
+      </OKLink>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

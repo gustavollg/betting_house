@@ -1,0 +1,26 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="550" gr:y="0" id="sv1#area2#area4#area11" name="Teams" landmark="true" defaultPage="sv1#area2#area4#area11#page19">
+  <OperationUnits>
+    <DeleteUnit id="sv1#area2#area4#area11#dlu6" name="Delete Team" gr:x="5" gr:y="0" entity="ent7">
+      <Selector id="sv1#area2#area4#area11#dlu6#su11" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area2#area4#area11#dlu6#su11#kcond11" name="KeyCondition6" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#area2#area4#area11#dlu6#kln23" name="KOFlow16" to="sv1#area2#page3#mssu2">
+        <LinkParameter id="sv1#area2#area4#area11#dlu6#kln23#par71" name="An error has occurred._Shown Messages" target="sv1#area2#page3#mssu2.shownMessages" sourceValue="An error has occurred."/>
+      </KOLink>
+      <OKLink id="sv1#area2#area4#area11#dlu6#oln23" name="OKFlow15" to="sv1#area2#page4#mssu3">
+        <LinkParameter id="sv1#area2#area4#area11#dlu6#oln23#par72" name="User deleted successfully._Shown Messages" target="sv1#area2#page4#mssu3.shownMessages" sourceValue="Team deleted successfully."/>
+      </OKLink>
+    </DeleteUnit>
+    <ModifyUnit gr:x="135" gr:y="0" id="sv1#area2#area4#area11#mfu6" name="Update Team" entity="ent7">
+      <Selector id="sv1#area2#area4#area11#mfu6#su20" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area2#area4#area11#mfu6#su20#kcond15" name="KeyCondition15" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#area2#area4#area11#mfu6#kln34" name="KOFlow34" to="sv1#area2#page3#mssu2">
+        <LinkParameter id="sv1#area2#area4#area11#mfu6#kln34#par152" name="An error has occurred._Shown Messages" sourceValue="An error has occurred." target="sv1#area2#page3#mssu2.shownMessages"/>
+      </KOLink>
+      <OKLink id="sv1#area2#area4#area11#mfu6#oln36" name="OKFlow36" to="sv1#area2#page4#mssu3">
+        <LinkParameter id="sv1#area2#area4#area11#mfu6#oln36#par158" name="Team updated successfully._Shown Messages" sourceValue="Team updated successfully." target="sv1#area2#page4#mssu3.shownMessages"/>
+      </OKLink>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

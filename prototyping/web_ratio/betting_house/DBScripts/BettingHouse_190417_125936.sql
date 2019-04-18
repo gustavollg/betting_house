@@ -22,7 +22,14 @@ create table `user` (
    `email`  varchar(255),
    `password`  varchar(255),
    `coins`  double precision,
-   `username`  varchar(255),
+  primary key (`id`)
+);
+
+
+-- Sport [ent1]
+create table `sport` (
+   `id`  integer  not null,
+   `name`  varchar(255),
   primary key (`id`)
 );
 
@@ -63,20 +70,13 @@ create table `transaction` (
 );
 
 
--- Odd [ent3]
+-- Odd [ent5]
 create table `odd` (
-   `id`  integer  not null,
-   `odd`  double precision,
-   `points`  integer,
-  primary key (`id`)
-);
-
-
--- Sport [ent4]
-create table `sport` (
-   `id`  integer  not null,
-   `name`  varchar(255),
-  primary key (`id`)
+   `eventid`  integer  not null,
+   `teamid`  integer  not null,
+   `odd`  varchar(255),
+   `points`  varchar(255),
+  primary key (`eventid`, `teamid`)
 );
 
 
@@ -118,6 +118,11 @@ alter table `user_group`   add index fk_user_group_user (`user_id`), add constra
 alter table `user_group`   add index fk_user_group_group (`group_id`), add constraint fk_user_group_group foreign key (`group_id`) references `group` (`id`);
 
 
+-- Sport_Event [rel1]
+alter table `sport`  add column  `event_id`  integer;
+alter table `sport`   add index fk_sport_event (`event_id`), add constraint fk_sport_event foreign key (`event_id`) references `event` (`id`);
+
+
 -- Transaction_User [rel2]
 alter table `transaction`  add column  `user_id`  integer;
 alter table `transaction`   add index fk_transaction_user (`user_id`), add constraint fk_transaction_user foreign key (`user_id`) references `user` (`id`);
@@ -133,28 +138,23 @@ alter table `notification`  add column  `id_event`  integer;
 alter table `notification`   add index fk_notification_event (`id_event`), add constraint fk_notification_event foreign key (`id_event`) references `event` (`id`);
 
 
--- Event_Odd [rel4]
-alter table `odd`  add column  `event_id`  integer;
-alter table `odd`   add index fk_odd_event (`event_id`), add constraint fk_odd_event foreign key (`event_id`) references `event` (`id`);
-
-
--- Odd_Team [rel5]
-alter table `odd`  add column  `team_id`  integer;
-alter table `odd`   add index fk_odd_team (`team_id`), add constraint fk_odd_team foreign key (`team_id`) references `team` (`id`);
-
-
--- Bet_User [rel6]
-alter table `bet`  add column  `user_id`  integer;
-alter table `bet`   add index fk_bet_user (`user_id`), add constraint fk_bet_user foreign key (`user_id`) references `user` (`id`);
-
-
--- Notification_User [rel7]
+-- Notification_User [rel27]
 alter table `notification`  add column  `user_id`  integer;
 alter table `notification`   add index fk_notification_user (`user_id`), add constraint fk_notification_user foreign key (`user_id`) references `user` (`id`);
 
 
--- Sport_Event [rel9]
-alter table `event`  add column  `sport_id`  integer;
-alter table `event`   add index fk_event_sport (`sport_id`), add constraint fk_event_sport foreign key (`sport_id`) references `sport` (`id`);
+-- Bet_User [rel28]
+alter table `bet`  add column  `user_id`  integer;
+alter table `bet`   add index fk_bet_user (`user_id`), add constraint fk_bet_user foreign key (`user_id`) references `user` (`id`);
+
+
+-- OddEvent [rel7]
+alter table `odd`  add column  `event_id`  integer;
+alter table `odd`   add index fk_odd_event (`event_id`), add constraint fk_odd_event foreign key (`event_id`) references `event` (`id`);
+
+
+-- OddTeam [rel9]
+alter table `odd`  add column  `team_id`  integer;
+alter table `odd`   add index fk_odd_team (`team_id`), add constraint fk_odd_team foreign key (`team_id`) references `team` (`id`);
 
 

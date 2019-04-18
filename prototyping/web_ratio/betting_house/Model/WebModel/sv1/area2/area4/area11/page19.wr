@@ -1,0 +1,32 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area2#area4#area11#page19" name="List" gr:x="0" gr:y="120">
+  <ContentUnits>
+    <IndexUnit id="sv1#area2#area4#area11#page19#inu7" name="Teams" linkOrder="sv1#area2#area4#area11#page19#inu7#ln16 sv1#area2#area4#area11#page19#inu7#ln42" gr:x="0" gr:y="0" entity="ent7" displayAttributes="ent7#att18">
+      <Link id="sv1#area2#area4#area11#page19#inu7#ln16" name="Delete" to="sv1#area2#area4#area11#dlu6" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#area4#area11#page19#inu7#ln16#par70" name="id_KeyCondition6 [id]" source="data[].ent7#att17" target="sv1#area2#area4#area11#dlu6#su11#kcond11.ent7#att17"/>
+      </Link>
+      <Link id="sv1#area2#area4#area11#page19#inu7#ln42" name="Update" to="sv1#area2#area4#area11#page36#enu17" automaticCoupling="true" type="normal" validate="true"/>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#area4#area11#page19#inu7">
+          <layout:Attribute attribute="ent7#att18"/>
+          <layout:Link link="sv1#area2#area4#area11#page19#inu7#ln16"/>
+          <layout:Link link="sv1#area2#area4#area11#page19#inu7#ln42"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

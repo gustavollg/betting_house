@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="125" gr:y="120" id="sv1#area2#area4#area11#page36" name="Update">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area2#area4#area11#page36#enu17" name="Team Form" entity="ent7" linkOrder="sv1#area2#area4#area11#page36#enu17#ln43">
+      <Field id="sv1#area2#area4#area11#page36#enu17#fld37" name="Name" type="string" modifiable="true" attribute="ent7#att18"/>
+      <Link id="sv1#area2#area4#area11#page36#enu17#ln43" name="Update" to="sv1#area2#area4#area11#mfu6" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#area4#area11#page36#enu17#ln43#par144" name="Key [id]_KeyCondition15 [id]" source="key.ent7#att17" target="sv1#area2#area4#area11#mfu6#su20#kcond15.ent7#att17"/>
+        <LinkParameter id="sv1#area2#area4#area11#page36#enu17#ln43#par145" name="name_name" source="sv1#area2#area4#area11#page36#enu17#fld37" target="sv1#area2#area4#area11#mfu6.ent7#att18"/>
+        <LinkParameter id="sv1#area2#area4#area11#page36#enu17#ln43#par146" name="Team Object_Team Object" source="entityBean" target="sv1#area2#area4#area11#mfu6.entityBeans"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#area4#area11#page36#enu17">
+          <layout:Field field="sv1#area2#area4#area11#page36#enu17#fld37"/>
+          <layout:Link link="sv1#area2#area4#area11#page36#enu17#ln43"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,26 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="235" gr:y="0" id="sv1#area2#area4#area12" name="Events" landmark="true" defaultPage="sv1#area2#area4#area12#page20">
+  <OperationUnits>
+    <DeleteUnit id="sv1#area2#area4#area12#dlu7" name="Delete Event" gr:x="5" gr:y="0" entity="ent16">
+      <Selector id="sv1#area2#area4#area12#dlu7#su12" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area2#area4#area12#dlu7#su12#kcond12" name="KeyCondition7" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#area2#area4#area12#dlu7#kln24" name="KOFlow17" to="sv1#area2#page3#mssu2">
+        <LinkParameter id="sv1#area2#area4#area12#dlu7#kln24#par73" name="An error has occurred._Shown Messages" target="sv1#area2#page3#mssu2.shownMessages" sourceValue="An error has occurred."/>
+      </KOLink>
+      <OKLink id="sv1#area2#area4#area12#dlu7#oln24" name="OKFlow16" to="sv1#area2#page4#mssu3">
+        <LinkParameter id="sv1#area2#area4#area12#dlu7#oln24#par74" name="User deleted successfully._Shown Messages" target="sv1#area2#page4#mssu3.shownMessages" sourceValue="Event deleted successfully."/>
+      </OKLink>
+    </DeleteUnit>
+    <ModifyUnit gr:x="140" gr:y="5" id="sv1#area2#area4#area12#mfu5" name="Update Event" entity="ent16">
+      <Selector id="sv1#area2#area4#area12#mfu5#su19" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area2#area4#area12#mfu5#su19#kcond14" name="KeyCondition14" predicate="in" implied="false"/>
+      </Selector>
+      <OKLink id="sv1#area2#area4#area12#mfu5#oln34" name="OKFlow34" to="sv1#area2#page4#mssu3">
+        <LinkParameter id="sv1#area2#area4#area12#mfu5#oln34#par141" name="Event updated successfully._Shown Messages" sourceValue="Event updated successfully." target="sv1#area2#page4#mssu3.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv1#area2#area4#area12#mfu5#kln32" name="KOFlow32" to="sv1#area2#page3#mssu2">
+        <LinkParameter id="sv1#area2#area4#area12#mfu5#kln32#par142" name="An error has occurred._Shown Messages" sourceValue="An error has occurred." target="sv1#area2#page3#mssu2.shownMessages"/>
+      </KOLink>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

@@ -1,11 +1,33 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page40" name="Error" gr:x="65" gr:y="620">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="285" gr:y="65" id="sv1#page40" name="Register User" landmark="true">
   <ContentUnits>
-    <MultiMessageUnit id="sv1#page40#mssu17" name="Error" gr:x="0" gr:y="0"/>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#page40#enu20" name="User Form" entity="User" linkOrder="sv1#page40#enu20#ln52">
+      <Field id="sv1#page40#enu20#fld42" name="Name" type="string" modifiable="true" attribute="userName"/>
+      <Field id="sv1#page40#enu20#fld43" name="Email" type="string" modifiable="true" attribute="password"/>
+      <Field id="sv1#page40#enu20#fld44" name="Username" type="string" modifiable="true" attribute="User#att1"/>
+      <Field id="sv1#page40#enu20#fld45" name="Password" type="password" modifiable="true" attribute="email"/>
+      <Field id="sv1#page40#enu20#fld46" name="Coins" type="float" modifiable="true" attribute="User#att83"/>
+      <Link id="sv1#page40#enu20#ln52" name="Register" to="sv1#cru12" type="normal" validate="true">
+        <LinkParameter id="sv1#page40#enu20#ln52#par189" name="coins_coins" source="sv1#page40#enu20#fld46" target="sv1#cru12.User#att83"/>
+        <LinkParameter id="sv1#page40#enu20#ln52#par190" name="email_email" source="sv1#page40#enu20#fld43" target="sv1#cru12.password"/>
+        <LinkParameter id="sv1#page40#enu20#ln52#par191" name="Key [id]_id" source="key.userOID" target="sv1#cru12.userOID"/>
+        <LinkParameter id="sv1#page40#enu20#ln52#par192" name="name_name" source="sv1#page40#enu20#fld42" target="sv1#cru12.userName"/>
+        <LinkParameter id="sv1#page40#enu20#ln52#par193" name="password_password" source="sv1#page40#enu20#fld45" target="sv1#cru12.email"/>
+        <LinkParameter id="sv1#page40#enu20#ln52#par194" name="User Object_User Object" source="entityBean" target="sv1#cru12.entityBeans"/>
+        <LinkParameter id="sv1#page40#enu20#ln52#par195" name="username_username" source="sv1#page40#enu20#fld44" target="sv1#cru12.User#att1"/>
+      </Link>
+    </EntryUnit>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#page40#mssu17"/>
+        <layout:Unit unitId="sv1#page40#enu20">
+          <layout:Field field="sv1#page40#enu20#fld42"/>
+          <layout:Field field="sv1#page40#enu20#fld43"/>
+          <layout:Field field="sv1#page40#enu20#fld44"/>
+          <layout:Field field="sv1#page40#enu20#fld45"/>
+          <layout:Field field="sv1#page40#enu20#fld46"/>
+          <layout:Link link="sv1#page40#enu20#ln52"/>
+        </layout:Unit>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

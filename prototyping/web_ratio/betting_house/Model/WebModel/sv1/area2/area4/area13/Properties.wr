@@ -1,0 +1,15 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="sv1#area2#area4#area13" name="Users" landmark="true" defaultPage="sv1#area2#area4#area13#page21">
+  <OperationUnits>
+    <DeleteUnit id="sv1#area2#area4#area13#dlu8" name="Delete User" gr:x="10" gr:y="0" entity="User">
+      <Selector id="sv1#area2#area4#area13#dlu8#su13" defaultPolicy="fill" booleanOperator="and">
+        <KeyCondition id="sv1#area2#area4#area13#dlu8#su13#kcond13" name="KeyCondition8" predicate="in" implied="false"/>
+      </Selector>
+      <KOLink id="sv1#area2#area4#area13#dlu8#kln25" name="KOFlow18" to="sv1#area2#page3#mssu2">
+        <LinkParameter id="sv1#area2#area4#area13#dlu8#kln25#par77" name="An error has occurred._Shown Messages" target="sv1#area2#page3#mssu2.shownMessages" sourceValue="An error has occurred."/>
+      </KOLink>
+      <OKLink id="sv1#area2#area4#area13#dlu8#oln25" name="OKFlow18" to="sv1#area2#page4#mssu3">
+        <LinkParameter id="sv1#area2#area4#area13#dlu8#oln25#par78" name="User deleted successfully._Shown Messages" target="sv1#area2#page4#mssu3.shownMessages" sourceValue="User deleted successfully."/>
+      </OKLink>
+    </DeleteUnit>
+  </OperationUnits>
+</Area>

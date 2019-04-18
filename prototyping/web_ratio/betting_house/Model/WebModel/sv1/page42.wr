@@ -1,11 +1,11 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="225" gr:y="350" id="sv1#page41" name="Success">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="365" gr:y="350" id="sv1#page42" name="Error">
   <ContentUnits>
-    <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#page41#mssu11" name="Success"/>
+    <MultiMessageUnit gr:x="0" gr:y="0" id="sv1#page42#mssu12" name="Error"/>
   </ContentUnits>
   <layout:Grid containerType="grid">
     <layout:Row>
       <layout:Cell colspan="12">
-        <layout:Unit unitId="sv1#page41#mssu11"/>
+        <layout:Unit unitId="sv1#page42#mssu12"/>
       </layout:Cell>
       <layout:Cell/>
       <layout:Cell/>

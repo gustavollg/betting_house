@@ -22,7 +22,14 @@ create table `user` (
    `email`  varchar(255),
    `password`  varchar(255),
    `coins`  double precision,
-   `username`  varchar(255),
+  primary key (`id`)
+);
+
+
+-- Sport [ent1]
+create table `sport` (
+   `id`  integer  not null,
+   `name`  varchar(255),
   primary key (`id`)
 );
 
@@ -72,14 +79,6 @@ create table `odd` (
 );
 
 
--- Sport [ent4]
-create table `sport` (
-   `id`  integer  not null,
-   `name`  varchar(255),
-  primary key (`id`)
-);
-
-
 -- Team [ent7]
 create table `team` (
    `id`  integer not null auto_increment,
@@ -118,6 +117,11 @@ alter table `user_group`   add index fk_user_group_user (`user_id`), add constra
 alter table `user_group`   add index fk_user_group_group (`group_id`), add constraint fk_user_group_group foreign key (`group_id`) references `group` (`id`);
 
 
+-- Sport_Event [rel1]
+alter table `event`  add column  `id`  integer;
+alter table `event`   add index fk_event_sport (`id`), add constraint fk_event_sport foreign key (`id`) references `sport` (`id`);
+
+
 -- Transaction_User [rel2]
 alter table `transaction`  add column  `user_id`  integer;
 alter table `transaction`   add index fk_transaction_user (`user_id`), add constraint fk_transaction_user foreign key (`user_id`) references `user` (`id`);
@@ -151,10 +155,5 @@ alter table `bet`   add index fk_bet_user (`user_id`), add constraint fk_bet_use
 -- Notification_User [rel7]
 alter table `notification`  add column  `user_id`  integer;
 alter table `notification`   add index fk_notification_user (`user_id`), add constraint fk_notification_user foreign key (`user_id`) references `user` (`id`);
-
-
--- Sport_Event [rel9]
-alter table `event`  add column  `sport_id`  integer;
-alter table `event`   add index fk_event_sport (`sport_id`), add constraint fk_event_sport foreign key (`sport_id`) references `sport` (`id`);
 
 

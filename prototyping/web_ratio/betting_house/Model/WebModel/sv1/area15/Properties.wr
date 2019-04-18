@@ -1,0 +1,20 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="485" gr:y="905" id="sv1#area15" name="Users" landmark="true" landmarks="sv1#area15#area16" defaultPage="sv1#area15#cru10">
+  <OperationUnits>
+    <CreateUnit gr:x="215" gr:y="85" id="sv1#area15#cru10" name="Create Bet" entity="ent15">
+      <OKLink id="sv1#area15#cru10#oln32" name="OKFlow32" to="sv1#area15#page31#mssu9">
+        <LinkParameter id="sv1#area15#cru10#oln32#par123" name="Betted successfully._Shown Messages" sourceValue="Bet successfully." target="sv1#area15#page31#mssu9.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv1#area15#cru10#kln30" name="KOFlow30" to="sv1#area15#page32#mssu10">
+        <LinkParameter id="sv1#area15#cru10#kln30#par124" name="An error has occurred._Shown Messages" sourceValue="An error has occurred." target="sv1#area15#page32#mssu10.shownMessages"/>
+      </KOLink>
+    </CreateUnit>
+    <CreateUnit gr:x="220" gr:y="195" id="sv1#area15#cru11" name="Create Bet" entity="ent15">
+      <OKLink id="sv1#area15#cru11#oln33" name="OKFlow33" to="sv1#area15#page31#mssu9">
+        <LinkParameter id="sv1#area15#cru11#oln33#par127" name="Bet Successfully._Shown Messages" sourceValue="Bet Successfully." target="sv1#area15#page31#mssu9.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv1#area15#cru11#kln31" name="KOFlow31" to="sv1#area15#page32#mssu10">
+        <LinkParameter id="sv1#area15#cru11#kln31#par128" name="An error has occurred._Shown Messages" sourceValue="An error has occurred." target="sv1#area15#page32#mssu10.shownMessages"/>
+      </KOLink>
+    </CreateUnit>
+  </OperationUnits>
+</Area>

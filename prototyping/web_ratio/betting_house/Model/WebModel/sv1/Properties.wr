@@ -1,9 +1,13 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="betting_house_site_view" homePage="sv1#page1" landmarks="sv1#area2 sv1#area5 sv1#area6">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1" name="Administrator" landmarks="sv1#page33 sv1#page40 sv1#area2 sv1#area15" layout:fieldLayout="WRDefault/FieldValue" homePage="sv1#page44">
   <OperationUnits>
-    <LoginUnit gr:x="5" gr:y="235" id="sv1#lgu1" name="Login1"/>
-    <CreateUnit gr:x="0" gr:y="500" id="sv1#cru9" name="Create User" entity="User">
-      <OKLink id="sv1#cru9#oln21" name="OKFlow21" to="sv1#page41#mssu18" automaticCoupling="true"/>
-      <KOLink id="sv1#cru9#kln21" name="KOFlow21" to="sv1#page40#mssu17" automaticCoupling="true"/>
+    <LoginUnit gr:x="115" gr:y="395" id="sv1#lgu3" name="Login"/>
+    <CreateUnit gr:x="300" gr:y="235" id="sv1#cru12" name="Create User" entity="User">
+      <OKLink id="sv1#cru12#oln37" name="OKFlow37" to="sv1#page41#mssu11">
+        <LinkParameter id="sv1#cru12#oln37#par196" name="User created successfully._Shown Messages" sourceValue="User created successfully." target="sv1#page41#mssu11.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv1#cru12#kln35" name="KOFlow35" to="sv1#page42#mssu12">
+        <LinkParameter id="sv1#cru12#kln35#par197" name="An error has occurred._Shown Messages" sourceValue="An error has occurred." target="sv1#page42#mssu12.shownMessages"/>
+      </KOLink>
     </CreateUnit>
   </OperationUnits>
 </SiteView>

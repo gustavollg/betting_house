@@ -1,0 +1,41 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="130" gr:y="125" id="sv1#area2#area4#area12#page35" name="Update">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area2#area4#area12#page35#enu16" name="Event Form" entity="ent16" linkOrder="sv1#area2#area4#area12#page35#enu16#ln40">
+      <Field id="sv1#area2#area4#area12#page35#enu16#fld33" name="id" type="integer" modifiable="true" attribute="ent16#att61"/>
+      <Field id="sv1#area2#area4#area12#page35#enu16#fld34" name="Information" type="text" modifiable="true" attribute="ent16#att62"/>
+      <Field id="sv1#area2#area4#area12#page35#enu16#fld35" name="Restricted" type="boolean" modifiable="true" attribute="ent16#att63"/>
+      <Field id="sv1#area2#area4#area12#page35#enu16#fld36" name="Open" type="boolean" modifiable="true" attribute="ent16#att69"/>
+      <Link id="sv1#area2#area4#area12#page35#enu16#ln40" name="Update" to="sv1#area2#area4#area12#mfu5" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#area4#area12#page35#enu16#ln40#par136" name="Event Object_Event Object" source="entityBean" target="sv1#area2#area4#area12#mfu5.entityBeans"/>
+        <LinkParameter id="sv1#area2#area4#area12#page35#enu16#ln40#par137" name="information_information" source="sv1#area2#area4#area12#page35#enu16#fld34" target="sv1#area2#area4#area12#mfu5.ent16#att62"/>
+        <LinkParameter id="sv1#area2#area4#area12#page35#enu16#ln40#par138" name="isOpen_isOpen" source="sv1#area2#area4#area12#page35#enu16#fld36" target="sv1#area2#area4#area12#mfu5.ent16#att69"/>
+        <LinkParameter id="sv1#area2#area4#area12#page35#enu16#ln40#par139" name="isRestricted_isRestricted" source="sv1#area2#area4#area12#page35#enu16#fld35" target="sv1#area2#area4#area12#mfu5.ent16#att63"/>
+        <LinkParameter id="sv1#area2#area4#area12#page35#enu16#ln40#par140" name="Key [id]_KeyCondition14 [id]" source="key.ent16#att61" target="sv1#area2#area4#area12#mfu5#su19#kcond14.ent16#att61"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#area4#area12#page35#enu16">
+          <layout:Field field="sv1#area2#area4#area12#page35#enu16#fld33"/>
+          <layout:Field field="sv1#area2#area4#area12#page35#enu16#fld34"/>
+          <layout:Field field="sv1#area2#area4#area12#page35#enu16#fld35"/>
+          <layout:Field field="sv1#area2#area4#area12#page35#enu16#fld36"/>
+          <layout:Link link="sv1#area2#area4#area12#page35#enu16#ln40"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

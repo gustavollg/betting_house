@@ -1,26 +1,45 @@
-[21 Mar 2019 20:22:50] DEBUG Executing SQL script
-[21 Mar 2019 20:22:50] INFO ================================================================================
-[21 Mar 2019 20:22:50] INFO onError= 'stop'
-[21 Mar 2019 20:22:50] INFO autoCommit= 'false'
-[21 Mar 2019 20:22:50] INFO username= 'root'
-[21 Mar 2019 20:22:50] INFO outputPath= 'C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\betting_house\.Temp~\RollbackSQL.xml'
-[21 Mar 2019 20:22:50] INFO outputLogPath= 'C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\betting_house\.Temp~\RollbackSQL.xml.log'
-[21 Mar 2019 20:22:50] INFO encoding= ''
-[21 Mar 2019 20:22:50] INFO driverClass= 'com.mysql.jdbc.Driver'
-[21 Mar 2019 20:22:50] INFO sqlScript= 'C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\betting_house\.Temp~\RollbackSQL.sql'
-[21 Mar 2019 20:22:50] INFO eventSocketPort= '50125'
-[21 Mar 2019 20:22:50] INFO statementSeparator= ';'
-[21 Mar 2019 20:22:50] INFO derby.system.home= 'C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
-[21 Mar 2019 20:22:50] INFO password= '123456'
-[21 Mar 2019 20:22:50] INFO url= 'jdbc:mysql://localhost:3306/betting_house'
-[21 Mar 2019 20:22:50] INFO ================================================================================
-[21 Mar 2019 20:22:50] INFO Connecting to the Database...
-[21 Mar 2019 20:22:51] INFO Database connection estabilished
-[21 Mar 2019 20:22:51] INFO transaction isolation: 4
-[21 Mar 2019 20:22:51] DEBUG ================================================================================
-[21 Mar 2019 20:22:51] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Community Platform 7.2.17.x64bit\workspace\betting_house\.Temp~\RollbackSQL.sql
-[21 Mar 2019 20:22:51] DEBUG Executing statement:  alter table `user`   drop column  `coins`
-[21 Mar 2019 20:22:52] DEBUG ================================================================================
-[21 Mar 2019 20:22:53] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
-[21 Mar 2019 20:22:53] INFO Database connection closed
-[21 Mar 2019 20:22:53] DEBUG Total time: 2187 milliseconds
+[17 Abr 2019 22:01:38] DEBUG Executing SQL script
+[17 Abr 2019 22:01:38] INFO ================================================================================
+[17 Abr 2019 22:01:38] INFO onError= 'stop'
+[17 Abr 2019 22:01:38] INFO autoCommit= 'false'
+[17 Abr 2019 22:01:38] INFO username= 'root'
+[17 Abr 2019 22:01:38] INFO outputPath= 'C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\RollbackSQL.xml'
+[17 Abr 2019 22:01:38] INFO outputLogPath= 'C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\RollbackSQL.xml.log'
+[17 Abr 2019 22:01:38] INFO encoding= ''
+[17 Abr 2019 22:01:38] INFO driverClass= 'com.mysql.jdbc.Driver'
+[17 Abr 2019 22:01:38] INFO sqlScript= 'C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\RollbackSQL.sql'
+[17 Abr 2019 22:01:38] INFO eventSocketPort= '54637'
+[17 Abr 2019 22:01:38] INFO statementSeparator= ';'
+[17 Abr 2019 22:01:38] INFO derby.system.home= 'C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\.metadata\.plugins\com.webratio.commons.db\derby'
+[17 Abr 2019 22:01:38] INFO password= 'root'
+[17 Abr 2019 22:01:38] INFO url= 'jdbc:mysql://localhost:3306/betting_house'
+[17 Abr 2019 22:01:38] INFO ================================================================================
+[17 Abr 2019 22:01:38] INFO Connecting to the Database...
+[17 Abr 2019 22:01:40] INFO Database connection estabilished
+[17 Abr 2019 22:01:40] INFO transaction isolation: 4
+[17 Abr 2019 22:01:40] DEBUG ================================================================================
+[17 Abr 2019 22:01:40] DEBUG Executing SQL script file: C:\WebRatio\WebRatio Community Platform 7.2.18.x64bit\workspace\betting_house\.Temp~\RollbackSQL.sql
+[17 Abr 2019 22:01:40] DEBUG Executing statement:  alter table `user_group`   drop foreign key `fk_user_group_group`
+[17 Abr 2019 22:01:40] DEBUG Executing statement:  alter table `user_group`   drop foreign key `fk_user_group_user`
+[17 Abr 2019 22:01:40] DEBUG Executing statement:  drop table `user_group`
+[17 Abr 2019 22:01:41] DEBUG Executing statement:  alter table `user`   drop foreign key `fk_user_group`
+[17 Abr 2019 22:01:41] DEBUG Executing statement:  alter table `user`  drop column  `group_id`
+[17 Abr 2019 22:01:42] DEBUG Executing statement:  alter table `group_module`   drop foreign key `fk_group_module_module`
+[17 Abr 2019 22:01:42] DEBUG Executing statement:  alter table `group_module`   drop foreign key `fk_group_module_group`
+[17 Abr 2019 22:01:42] DEBUG Executing statement:  drop table `group_module`
+[17 Abr 2019 22:01:42] DEBUG Executing statement:  alter table `group`   drop foreign key `fk_group_module`
+[17 Abr 2019 22:01:43] DEBUG Executing statement:  alter table `group`  drop column  `module_id`
+[17 Abr 2019 22:01:43] DEBUG Executing statement:  drop table `team`
+[17 Abr 2019 22:01:44] DEBUG Executing statement:  drop table `odd`
+[17 Abr 2019 22:01:44] DEBUG Executing statement:  drop table `transaction`
+[17 Abr 2019 22:01:44] DEBUG Executing statement:  drop table `notification`
+[17 Abr 2019 22:01:45] DEBUG Executing statement:  drop table `event`
+[17 Abr 2019 22:01:45] DEBUG Executing statement:  drop table `bet`
+[17 Abr 2019 22:01:46] DEBUG Executing statement:  drop table `sport`
+[17 Abr 2019 22:01:46] DEBUG Executing statement:  drop table `user`
+[17 Abr 2019 22:01:47] DEBUG Executing statement:  drop table `module`
+[17 Abr 2019 22:01:47] DEBUG Executing statement:  drop table `group`
+[17 Abr 2019 22:01:47] DEBUG ================================================================================
+[17 Abr 2019 22:01:47] DEBUG SQL SCRIPT SUCCESSFULLY EXECUTED
+[17 Abr 2019 22:01:47] INFO Database connection closed
+[17 Abr 2019 22:01:47] DEBUG Total time: 9990 milliseconds

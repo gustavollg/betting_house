@@ -1,0 +1,66 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" gr:x="0" gr:y="0" id="sv1#area15#area16#page29" name="Events">
+  <ContentUnits>
+    <IndexUnit gr:x="0" gr:y="0" id="sv1#area15#area16#page29#inu14" name="Unrestricted Events" entity="ent16" displayAttributes="ent16#att62 ent16#att63 ent16#att69" linkOrder="sv1#area15#area16#page29#inu14#ln31">
+      <Selector id="sv1#area15#area16#page29#inu14#su17" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area15#area16#page29#inu14#su17#acond5" name="isRestrictedF" predicate="eq" booleanOperator="or" implied="false" attributes="ent16#att63" value="0"/>
+      </Selector>
+      <Link id="sv1#area15#area16#page29#inu14#ln31" name="Bet" to="sv1#area15#cru10" type="normal" validate="true">
+        <LinkParameter id="sv1#area15#area16#page29#inu14#ln31#par119" name="id_Event.id(BetToEvent)" source="data[].ent16#att61" target="sv1#area15#cru10.rel20#role39.ent16#att61"/>
+        <LinkParameter id="sv1#area15#area16#page29#inu14#ln31#par120" name="id_id" source="data[].ent16#att61" target="sv1#area15#cru10.ent15#att57"/>
+      </Link>
+    </IndexUnit>
+    <IndexUnit gr:x="0" gr:y="110" id="sv1#area15#area16#page29#inu15" name="Restricted Event" entity="ent16" displayAttributes="ent16#att62 ent16#att63 ent16#att69" linkOrder="sv1#area15#area16#page29#inu15#ln33">
+      <Selector id="sv1#area15#area16#page29#inu15#su18" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area15#area16#page29#inu15#su18#acond8" name="isRestrictedT" predicate="eq" booleanOperator="or" implied="false" attributes="ent16#att63" value="1"/>
+      </Selector>
+      <Link id="sv1#area15#area16#page29#inu15#ln33" name="Bet" to="sv1#area15#cru11" type="normal" validate="true">
+        <LinkParameter id="sv1#area15#area16#page29#inu15#ln33#par125" name="id_Event.id(BetToEvent)" source="data[].ent16#att61" target="sv1#area15#cru11.rel20#role39.ent16#att61"/>
+        <LinkParameter id="sv1#area15#area16#page29#inu15#ln33#par126" name="id_id" source="data[].ent16#att61" target="sv1#area15#cru11.ent15#att57"/>
+      </Link>
+    </IndexUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area15#area16#page29#inu14">
+          <layout:Attribute attribute="ent16#att62"/>
+          <layout:Attribute attribute="ent16#att63"/>
+          <layout:Attribute attribute="ent16#att69"/>
+          <layout:Link link="sv1#area15#area16#page29#inu14#ln31"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area15#area16#page29#inu15">
+          <layout:Attribute attribute="ent16#att62"/>
+          <layout:Attribute attribute="ent16#att63"/>
+          <layout:Attribute attribute="ent16#att69"/>
+          <layout:Link link="sv1#area15#area16#page29#inu15#ln33"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

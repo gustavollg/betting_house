@@ -1,0 +1,40 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area2#area3#area9#page17" name="Form" gr:x="0" gr:y="0">
+  <ContentUnits>
+    <EntryUnit gr:x="0" gr:y="0" id="sv1#area2#area3#area9#page17#enu19" name="Event Form" entity="ent16" linkOrder="sv1#area2#area3#area9#page17#enu19#ln49" fieldOrder="sv1#area2#area3#area9#page17#enu19#fld39 sv1#area2#area3#area9#page17#enu19#fld40 sv1#area2#area3#area9#page17#enu19#fld41">
+      <Field id="sv1#area2#area3#area9#page17#enu19#fld39" name="Information" type="text" modifiable="true" attribute="ent16#att62"/>
+      <Field id="sv1#area2#area3#area9#page17#enu19#fld40" name="Restricted" type="boolean" modifiable="true" attribute="ent16#att63"/>
+      <Field id="sv1#area2#area3#area9#page17#enu19#fld41" name="Open" type="boolean" modifiable="true" attribute="ent16#att69"/>
+      <Link id="sv1#area2#area3#area9#page17#enu19#ln49" name="Register Event" to="sv1#area2#area3#area9#cru6" type="normal" validate="true">
+        <LinkParameter id="sv1#area2#area3#area9#page17#enu19#ln49#par165" name="Event Object_Event Object" source="entityBean" target="sv1#area2#area3#area9#cru6.entityBeans"/>
+        <LinkParameter id="sv1#area2#area3#area9#page17#enu19#ln49#par166" name="Key [id]_id" source="key.ent16#att61" target="sv1#area2#area3#area9#cru6.ent16#att61"/>
+        <LinkParameter id="sv1#area2#area3#area9#page17#enu19#ln49#par167" name="Information_information" source="sv1#area2#area3#area9#page17#enu19#fld39" target="sv1#area2#area3#area9#cru6.ent16#att62"/>
+        <LinkParameter id="sv1#area2#area3#area9#page17#enu19#ln49#par168" name="Open_isOpen" source="sv1#area2#area3#area9#page17#enu19#fld41" target="sv1#area2#area3#area9#cru6.ent16#att69"/>
+        <LinkParameter id="sv1#area2#area3#area9#page17#enu19#ln49#par169" name="Restricted_isRestricted" source="sv1#area2#area3#area9#page17#enu19#fld40" target="sv1#area2#area3#area9#cru6.ent16#att63"/>
+        <LinkParameter id="sv1#area2#area3#area9#page17#enu19#ln49#par170" name="Sports_Sport.id(EventToSport)" source="sv1#area2#area3#area9#page17#enu19#sfld4" target="sv1#area2#area3#area9#cru6.rel9#role18.ent4#att4"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid containerType="grid">
+    <layout:Row>
+      <layout:Cell colspan="12">
+        <layout:Unit unitId="sv1#area2#area3#area9#page17#enu19">
+          <layout:Link link="sv1#area2#area3#area9#page17#enu19#ln49"/>
+          <layout:Field field="sv1#area2#area3#area9#page17#enu19#fld39"/>
+          <layout:Field field="sv1#area2#area3#area9#page17#enu19#fld40"/>
+          <layout:Field field="sv1#area2#area3#area9#page17#enu19#fld41"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+      <layout:Cell/>
+    </layout:Row>
+  </layout:Grid>
+</Page>

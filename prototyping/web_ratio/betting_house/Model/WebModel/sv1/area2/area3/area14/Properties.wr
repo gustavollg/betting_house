@@ -1,0 +1,12 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="0" gr:y="0" id="sv1#area2#area3#area14" name="Sport" landmark="true" defaultPage="sv1#area2#area3#area14#page22">
+  <OperationUnits>
+    <CreateUnit gr:x="20" gr:y="160" id="sv1#area2#area3#area14#cru7" name="Create Sport" entity="ent4">
+      <OKLink id="sv1#area2#area3#area14#cru7#oln26" name="OKFlow26" to="sv1#area2#page4#mssu3">
+        <LinkParameter id="sv1#area2#area3#area14#cru7#oln26#par82" name="Sport created successfully._Shown Messages" sourceValue="Sport created successfully." target="sv1#area2#page4#mssu3.shownMessages"/>
+      </OKLink>
+      <KOLink id="sv1#area2#area3#area14#cru7#kln26" name="KOFlow26" to="sv1#area2#page3#mssu2">
+        <LinkParameter id="sv1#area2#area3#area14#cru7#kln26#par83" name="An error has occurred._Shown Messages" sourceValue="An error has occurred." target="sv1#area2#page3#mssu2.shownMessages"/>
+      </KOLink>
+    </CreateUnit>
+  </OperationUnits>
+</Area>

@@ -1,8 +1,8 @@
 -- Group [Group]
 create table `group` (
-   `id`  integer  not null,
+   `oid`  integer  not null,
    `name`  varchar(255),
-  primary key (`id`)
+  primary key (`oid`)
 );
 
 
@@ -17,13 +17,13 @@ create table `module` (
 
 -- User [User]
 create table `user` (
-   `id`  integer  not null,
+   `oid`  integer  not null,
    `name`  varchar(255),
    `email`  varchar(255),
    `password`  varchar(255),
    `coins`  double precision,
    `username`  varchar(255),
-  primary key (`id`)
+  primary key (`oid`)
 );
 
 
@@ -99,13 +99,13 @@ create table `group_module` (
    `module_id`  integer not null,
   primary key (`group_id`, `module_id`)
 );
-alter table `group_module`   add index fk_group_module_group (`group_id`), add constraint fk_group_module_group foreign key (`group_id`) references `group` (`id`);
+alter table `group_module`   add index fk_group_module_group (`group_id`), add constraint fk_group_module_group foreign key (`group_id`) references `group` (`oid`);
 alter table `group_module`   add index fk_group_module_module (`module_id`), add constraint fk_group_module_module foreign key (`module_id`) references `module` (`id`);
 
 
 -- User_DefaultGroup [User2DefaultGroup_DefaultGroup2User]
 alter table `user`  add column  `group_id`  integer;
-alter table `user`   add index fk_user_group (`group_id`), add constraint fk_user_group foreign key (`group_id`) references `group` (`id`);
+alter table `user`   add index fk_user_group (`group_id`), add constraint fk_user_group foreign key (`group_id`) references `group` (`oid`);
 
 
 -- User_Group [User2Group_Group2User]
@@ -114,13 +114,13 @@ create table `user_group` (
    `group_id`  integer not null,
   primary key (`user_id`, `group_id`)
 );
-alter table `user_group`   add index fk_user_group_user (`user_id`), add constraint fk_user_group_user foreign key (`user_id`) references `user` (`id`);
-alter table `user_group`   add index fk_user_group_group (`group_id`), add constraint fk_user_group_group foreign key (`group_id`) references `group` (`id`);
+alter table `user_group`   add index fk_user_group_user (`user_id`), add constraint fk_user_group_user foreign key (`user_id`) references `user` (`oid`);
+alter table `user_group`   add index fk_user_group_group (`group_id`), add constraint fk_user_group_group foreign key (`group_id`) references `group` (`oid`);
 
 
 -- Transaction_User [rel2]
 alter table `transaction`  add column  `user_id`  integer;
-alter table `transaction`   add index fk_transaction_user (`user_id`), add constraint fk_transaction_user foreign key (`user_id`) references `user` (`id`);
+alter table `transaction`   add index fk_transaction_user (`user_id`), add constraint fk_transaction_user foreign key (`user_id`) references `user` (`oid`);
 
 
 -- BetEvent [rel20]
@@ -145,12 +145,12 @@ alter table `odd`   add index fk_odd_team (`team_id`), add constraint fk_odd_tea
 
 -- Bet_User [rel6]
 alter table `bet`  add column  `user_id`  integer;
-alter table `bet`   add index fk_bet_user (`user_id`), add constraint fk_bet_user foreign key (`user_id`) references `user` (`id`);
+alter table `bet`   add index fk_bet_user (`user_id`), add constraint fk_bet_user foreign key (`user_id`) references `user` (`oid`);
 
 
 -- Notification_User [rel7]
 alter table `notification`  add column  `user_id`  integer;
-alter table `notification`   add index fk_notification_user (`user_id`), add constraint fk_notification_user foreign key (`user_id`) references `user` (`id`);
+alter table `notification`   add index fk_notification_user (`user_id`), add constraint fk_notification_user foreign key (`user_id`) references `user` (`oid`);
 
 
 -- Sport_Event [rel9]
